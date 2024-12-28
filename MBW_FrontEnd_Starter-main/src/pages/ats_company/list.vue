@@ -201,4 +201,42 @@ const fetchPermissions = async (doctype) => {
 	});
 	resource.fetch();
 };
+
+const flattenTree = (data, parentKey = null, level = 0) => {
+  const result = [];
+  data.forEach((node) => {
+    if (node.parent_ats_unit === parentKey) {
+      result.push({
+        ...node,
+        level, // Thêm thông tin cấp bậc
+      });
+      // Gọi đệ quy để xử lý các node con
+      result.push(...flattenTree(data, node.name, level + 1));
+    }
+  });
+  return result;
+};
+
+const buildTree = (data, parentKey = null) => {
+  return data
+    .filter((item) => item.parent_ats_unit === parentKey)
+    .map((item) => ({
+      ...item,
+      children: buildTree(data, item.name), // Đệ quy để tìm các con
+      collapsed: true, // Đặt trạng thái collapsed mặc định
+    }));
+};
+
+const test = createResource({
+	url: "xxx.api.ats_unit.get_tree_data",
+	params: { doctype: "ATS_Unit" },
+	auto: true,
+	onSuccess(data) {
+		console.log(flattenTree(data));
+		const flattenData = flattenTree(data);
+		const groupedData = buildTree(flattenData);
+		console.log(groupedData);
+
+	},
+});
 </script>
