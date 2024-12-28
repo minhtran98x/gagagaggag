@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company_id",
+ "creation": "2024-12-27 14:39:51.332976",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_1",
+  "column_1",
+  "company_id",
+  "company_name",
+  "company_address",
+  "company_head",
+  "column_break_yvat",
+  "cat_order",
+  "cat_status",
+  "cat_color",
+  "cat_icon"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "M\u00e3 c\u00f4ng ty",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "T\u00ean c\u00f4ng ty",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9 c\u00f4ng ty"
+  },
+  {
+   "fieldname": "company_head",
+   "fieldtype": "Data",
+   "label": "Ng\u01b0\u1eddi \u0111\u1ea1i di\u1ec7n c\u00f4ng ty"
+  },
+  {
+   "fieldname": "column_break_yvat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cat_order",
+   "fieldtype": "Int",
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  },
+  {
+   "default": "0",
+   "fieldname": "cat_status",
+   "fieldtype": "Check",
+   "label": "Tr\u1ea1ng th\u00e1i s\u1eed d\u1ee5ng"
+  },
+  {
+   "fieldname": "cat_color",
+   "fieldtype": "Color",
+   "label": "M\u00e0u danh m\u1ee5c"
+  },
+  {
+   "fieldname": "cat_icon",
+   "fieldtype": "Icon",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "section_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_1",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-27 16:46:12.600674",
+ "modified_by": "Administrator",
+ "module": "Xxx",
+ "name": "ATS_Company",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-12-25 15:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "institution_name",
+  "location",
+  "training_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "institution_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "T\u00ean t\u1ed5 ch\u1ee9c",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "training_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "H\u00ecnh th\u1ee9c \u0111\u00e0o t\u1ea1o",
+   "options": "\u0110\u1ea1i h\u1ecdc\nCao \u0111\u1eb3ng\nTrung t\u00e2m"
+  }
+ ],
+ "links": [],
+ "modified": "2024-12-26 15:22:24.993476",
+ "modified_by": "Administrator",
+ "module": "Xxx",
+ "name": "ATS-Institution",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Administrator",
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

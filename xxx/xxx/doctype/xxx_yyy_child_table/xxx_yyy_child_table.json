@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-09 00:35:54.720635",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "setion1",
+  "column1",
+  "first_name",
+  "column_break_yeog",
+  "last_name",
+  "section_break_qjxr",
+  "column_break",
+  "dia_chi"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "H\u1ecd"
+  },
+  {
+   "fieldname": "column_break_yeog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "T\u00ean"
+  },
+  {
+   "fieldname": "column1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "setion1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_qjxr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dia_chi",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-10 10:17:45.248930",
+ "modified_by": "Administrator",
+ "module": "xxx",
+ "name": "xxx_yyy_child_table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

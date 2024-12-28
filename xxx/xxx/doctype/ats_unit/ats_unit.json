@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:unit_name",
+ "creation": "2024-12-27 14:58:56.536545",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_u3z6",
+  "column_break_1",
+  "parent_ats_unit",
+  "unit_id",
+  "unit_name",
+  "m\u00e3_c\u00f4ng_ty",
+  "unit_address",
+  "unit_head",
+  "unit_level",
+  "column_break_oafb",
+  "lft",
+  "is_group",
+  "rgt",
+  "old_parent",
+  "cat_order",
+  "tr\u1ea1ng_th\u00e1i_s\u1eed_d\u1ee5ng",
+  "cat_color",
+  "cat_icon"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_u3z6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "ATS_Unit"
+  },
+  {
+   "fieldname": "parent_ats_unit",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "\u0110\u01a1n v\u1ecb cha",
+   "options": "ATS_Unit"
+  },
+  {
+   "fieldname": "unit_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "M\u00e3 \u0111\u01a1n v\u1ecb",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "T\u00ean \u0111\u01a1n v\u1ecb",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "m\u00e3_c\u00f4ng_ty",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "M\u00e3 c\u00f4ng ty",
+   "options": "ATS_Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_oafb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit_address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9 \u0111\u01a1n v\u1ecb"
+  },
+  {
+   "fieldname": "unit_head",
+   "fieldtype": "Data",
+   "label": "Ng\u01b0\u1eddi \u0111\u1ea1i di\u1ec7n \u0111\u01a1n v\u1ecb"
+  },
+  {
+   "fieldname": "cat_order",
+   "fieldtype": "Int",
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1"
+  },
+  {
+   "default": "True",
+   "fieldname": "tr\u1ea1ng_th\u00e1i_s\u1eed_d\u1ee5ng",
+   "fieldtype": "Check",
+   "label": "Tr\u1ea1ng th\u00e1i s\u1eed d\u1ee5ng"
+  },
+  {
+   "fieldname": "cat_color",
+   "fieldtype": "Color",
+   "label": "M\u00e0u danh m\u1ee5c"
+  },
+  {
+   "fieldname": "cat_icon",
+   "fieldtype": "Icon",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "unit_level",
+   "fieldtype": "Select",
+   "label": "C\u1ea5p \u0111\u01a1n v\u1ecb",
+   "options": "C\u00f4ng ty con\nChi nh\u00e1nh\nV\u0103n ph\u00f2ng \u0111\u1ea1i di\u1ec7n\nV\u0103n ph\u00f2ng\nTrung t\u00e2m\nPh\u00f2ng ban\nNh\u00f3m/T\u1ed5/\u0110\u1ed9i\nPh\u00e2n x\u01b0\u1edfng",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-12-27 15:57:16.614454",
+ "modified_by": "Administrator",
+ "module": "Xxx",
+ "name": "ATS_Unit",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_ats_unit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

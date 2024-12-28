@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:department",
+ "creation": "2024-12-27 13:44:07.990192",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wfrs",
+  "department",
+  "parent_department",
+  "column_break_jcjw",
+  "company",
+  "is_group",
+  "disabled",
+  "lft",
+  "rgt",
+  "old_parent",
+  "color_tpma",
+  "icon_cmbu"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wfrs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Data",
+   "label": "Old Parent"
+  },
+  {
+   "fieldname": "parent_department",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_jcjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "ATS-Institution"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "color_tpma",
+   "fieldtype": "Color"
+  },
+  {
+   "fieldname": "icon_cmbu",
+   "fieldtype": "Icon"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-12-27 14:25:06.218358",
+ "modified_by": "Administrator",
+ "module": "Xxx",
+ "name": "Department",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_department",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
